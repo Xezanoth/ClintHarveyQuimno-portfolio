@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clint Harvey Quimno - BSIT Student Portfolio">
+    <title>Clint Harvey Quimno - Portfolio</title>
+    <link rel="stylesheet" href="styles-static.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>PORTFOLIO</span>
+            </div>
+        </div>
+        <div class="nav-center">
+            <a href="#home" class="nav-item active">HOME</a>
+            <a href="#about" class="nav-item">ABOUT</a>
+            <a href="#skills" class="nav-item">SKILLS</a>
+            <a href="#projects" class="nav-item">PROJECTS</a>
+            <a href="#contact" class="nav-item">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <button class="settings-btn" id="theme-toggle"><i class="fas fa-cog"></i></button>
+            <button class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Left Panel - Main Content -->
+        <div class="left-panel">
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="img/profile.webp" alt="Profile Photo">
+                            </div>
+                            <div class="profile-info">
+                                <h1 class="profile-name">Clint Harvey Quimno</h1>
+                                <p class="profile-title">BSIT STUDENT</p>
+                                <div class="profile-stats">
+                                    <span class="stat-item">Level: <span class="stat-value">4</span></span>
+                                    <span class="stat-item">XP: <span class="stat-value">300/1000</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xp-bar">
+                            <div class="xp-fill" style="width: 30%"></div>
+                        </div>
+                    </div>
+
+                    <div class="hero-text">
+                        <h2 class="section-header">WELCOME TO MY PORTFOLIO</h2>
+                        <p>I'm a 3rd year BSIT student passionate about learning new technologies and building innovative solutions. Currently seeking internship opportunities to gain hands-on experience and grow as a developer.</p>
+                        
+                        <div class="action-buttons">
+                            <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                                <i class="fas fa-paper-plane"></i> CONTACT ME
+                            </button>
+                            <button class="btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                                <i class="fas fa-folder-open"></i> VIEW PROJECTS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-header">ABOUT ME</h2>
+                    <div class="section-content">
+                        <p>I'm a dedicated 3rd year BSIT student with a passion for web development and software engineering. I love learning new technologies and applying them to create practical solutions.</p>
+                        <p>My journey in tech started with curiosity about how mods and scripts in video games work. Now I'm actively building projects to strengthen my skills and prepare for my future career in technology.</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>BSIT - 3rd Year</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Davao City, Philippines</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Status</h4>
+                                    <p>Studying</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>clintharveyquimno@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-header">SKILLS & ABILITIES</h2>
+                    <div class="skills-grid">
+                        <div class="skills-category">
+                            <h3 class="category-title">TECHNICAL SKILLS</h3>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-html5"></i>
+                                        <span>HTML5 & CSS3</span>
+                                    </div>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" data-level="55">
+                                            <span class="skill-percent">55%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-js"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" data-level="20">
+                                            <span class="skill-percent">20%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-react"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" data-level="20">
+                                            <span class="skill-percent">20%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-php"></i>
+                                        <span>PHP</span>
+                                    </div>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" data-level="45">
+                                            <span class="skill-percent">45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fas fa-database"></i>
+                                        <span>Databases</span>
+                                    </div>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" data-level="45">
+                                            <span class="skill-percent">45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <i class="fab fa-git-alt"></i>
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" data-level="10">
+                                            <span class="skill-percent">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h3 class="category-title">SOFT SKILLS</h3>
+                            <div class="soft-skills">
+                                <div class="soft-skill-tag"><i class="fas fa-users"></i> Teamwork</div>
+                                <div class="soft-skill-tag"><i class="fas fa-comments"></i> Communication</div>
+                                <div class="soft-skill-tag"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+                                <div class="soft-skill-tag"><i class="fas fa-clock"></i> Time Management</div>
+                                <div class="soft-skill-tag"><i class="fas fa-book"></i> Fast Learner</div>
+                                <div class="soft-skill-tag"><i class="fas fa-shield-alt"></i> Adaptability</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-header">PROJECTS</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="img/Project1.png" alt="Dynamic Portfolio">
+                                <div class="project-overlay">
+                                    <button class="project-btn" onclick="window.open('https://github.com/Xezanoth/ClintHarveyQuimno-portfolio', '_blank')"><i class="fab fa-github"></i></button>
+                                    <button class="project-btn" onclick="window.open('#', '_blank')"><i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Dynamic Portfolio</h3>
+                                <p>A web-based student information system with grade viewing and enrollment features.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">CSS3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/400x250/8B0000/ffffff?text=Todo+List+App" alt="Empty">
+                                <div class="project-overlay">
+                                    <button class="project-btn" onclick="window.open('https://github.com', '_blank')"><i class="fab fa-github"></i></button>
+                                    <button class="project-btn" onclick="window.open('#', '_blank')"><i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Empty</h3>
+                                <p>N/A</p>
+                                <div class="project-tags">
+                                    <span class="tag">N/A</span>
+                                    <span class="tag">N/A</span>
+                                    <span class="tag">N/A</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-header">CONTACT</h2>
+                    <div class="contact-content">
+                        <div class="contact-form">
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label>NAME</label>
+                                    <input type="text" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>EMAIL</label>
+                                    <input type="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>MESSAGE</label>
+                                    <textarea rows="5" placeholder="Enter your message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary">
+                                    <i class="fas fa-paper-plane"></i> SEND MESSAGE
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <!-- User Info Card -->
+            <div class="sidebar-card">
+                <div class="card-header">
+                    <h3>USER INFO</h3>
+                    <span class="status-online"><i class="fas fa-circle"></i> ONLINE</span>
+                </div>
+                <div class="card-content">
+                    <div class="user-avatar-large">
+                        <img src="img/profile.webp" alt="Profile Photo">
+                    </div>
+                    <h3 class="user-name">Clint Harvey Quimno</h3>
+                    <p class="user-status">Still studying</p>
+                    <div class="user-badges">
+                        <span class="badge"><i class="fas fa-trophy"></i> BSIT Student</span>
+                        <span class="badge"><i class="fas fa-star"></i> Problem Solver</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="sidebar-card">
+                <div class="card-header">
+                    <h3>SOCIAL LINKS</h3>
+                </div>
+                <div class="card-content">
+                    <a href="https://github.com/Xezanoth" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/clint-harvey-quimno-5b650a345" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://facebook.com/clint.rean" class="social-link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="clintharveyquimno@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="sidebar-card">
+                <div class="card-header">
+                    <h3>EDUCATION</h3>
+                </div>
+                <div class="card-content">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <h4>BS Information Technology</h4>
+                            <p class="timeline-school">University of Mindanao</p>
+                            <p class="timeline-date">2023 - Current</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                        <div class="timeline-content">
+                            <h4>Senior High School - STEM</h4>
+                            <p class="timeline-school">F.Bangoy National High School (Grade 12)</p>
+                            <p class="timeline-date">2022 - 2023</p>
+                            <p class="timeline-school">MATS College of technology (Grade 11)</p>
+                            <p class="timeline-date">2019 - 2020</p>
+                        </div>
+                    </div>  
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                        <div class="timeline-content">
+                            <h4>High School</h4>
+                            <p class="timeline-school">Bernardo D. Carpio National Highschool</p>
+                            <p class="timeline-date">2018 - 2019</p>
+                            <p class="timeline-school">F.Bangoy National High School</p>
+                            <p class="timeline-date">2015 - 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="sidebar-card">
+                <div class="card-header">
+                    <h3>STATISTICS</h3>
+                </div>
+                <div class="card-content">
+                    <div class="stat-row">
+                        <span class="stat-label">Projects Completed</span>
+                        <span class="stat-number">15+</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Lines of Code</span>
+                        <span class="stat-number">50,000+</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">GitHub Commits</span>
+                        <span class="stat-number">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Years Learning</span>
+                        <span class="stat-number">4+</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Clint Harvey Quimno. All rights reserved.</p>
+    </footer>
+
+    <script src="script-static.js"></script>
+</body>
+</html>
